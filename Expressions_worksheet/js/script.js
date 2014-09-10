@@ -60,23 +60,23 @@
 
 
 // Discounts: Calculate the discounted price of an item with and without sales tax included.
-var originalPrice = 59.99;
-var discountPercentage = 20;
-var itemDescription = "Grand Theft Auto";
-var salesTaxPercentage = 8.25;
+    var originalPrice = 59.99;
+    var discountPercentage = 20;
+    var itemDescription = "Grand Theft Auto";
+    var salesTaxPercentage = 8.25;
 
-// Calculates the discounted price of the item without tax by taking the original price minus the original price
-// multiplied by the discount percentage.
-var itemPriceWithoutTax = originalPrice - (originalPrice * (discountPercentage/100));
+    // Calculates the discounted price of the item without tax by taking the original price minus the original price
+    // multiplied by the discount percentage.
+    var itemPriceWithoutTax = originalPrice - (originalPrice * (discountPercentage/100));
 
-// Calculates the discounted price of the item with tax by adding the price without tax
-// to the price without tax multiplied by the sales tax percentage.
-// *Sales tax is added after calculating the discounted cost!*
-var itemPriceWithTax = itemPriceWithoutTax + (itemPriceWithoutTax * (salesTaxPercentage/100));
+    // Calculates the discounted price of the item with tax by adding the price without tax
+    // to the price without tax multiplied by the sales tax percentage.
+    // *Sales tax is added after calculating the discounted cost!*
+    var itemPriceWithTax = itemPriceWithoutTax + (itemPriceWithoutTax * (salesTaxPercentage/100));
 
-// Rounds the results to two decimal places.
-itemPriceWithoutTax = itemPriceWithoutTax.toFixed(2);
-itemPriceWithTax = itemPriceWithTax.toFixed(2);
+    // Rounds the results to two decimal places.
+    itemPriceWithoutTax = itemPriceWithoutTax.toFixed(2);
+    itemPriceWithTax = itemPriceWithTax.toFixed(2);
 
-// Print out the item description, original price, discount percentage, discounted price without tax added, discounted price with tax added.
-console.log("Your " + itemDescription + " was originally $" + originalPrice + ", but after a " + discountPercentage + "% discount, it is now $" + itemPriceWithoutTax + " without tax, and $" + itemPriceWithTax + " with tax.");
+    // Print out the item description, original price, discount percentage, discounted price without tax added, discounted price with tax added.
+    console.log("Your " + itemDescription + " was originally $" + originalPrice + ", but after a " + discountPercentage + "% discount, it is now $" + itemPriceWithoutTax + " without tax, and $" + itemPriceWithTax + " with tax.");
