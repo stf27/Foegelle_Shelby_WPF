@@ -42,21 +42,21 @@
 
 
 // Average Shopping Bill: Create an expression that sums up the values in the array and then finds the average.
-        var groceryWeeklyTotals = [66, 84, 72, 127, 31];
+    var groceryWeeklyTotals = [66, 84, 72, 127, 31];
 
-        // Calls the function, reduce, which applies a function to each value of an array,
-        // from left to right, in order to reduce it to a single value.
-        // So I use reduce and create a function that adds the current index to the next index.
-        // This adds up each element in the array and returns the total value of the array.
-        var totalCost = groceryWeeklyTotals.reduce(function(a,b) {
-            return a + b;
-        });
+    // Calls the function, reduce, which applies a function to each value of an array,
+    // from left to right, in order to reduce it to a single value.
+    // So I use reduce and create a function that adds the current index to the next index.
+    // This adds up each element in the array and returns the total value of the array.
+    var totalCost = groceryWeeklyTotals.reduce(function(a,b) {
+        return a + b;
+    });
 
-        // Calculates the average cost of groceries per week by taking the total amount spend and dividing it by 5.
-        var avgWeeklyCosts = totalCost / 5;
+    // Calculates the average cost of groceries per week by taking the total amount spend and dividing it by 5.
+    var avgWeeklyCosts = totalCost / 5;
 
-        // Print out the total cost of groceries over 5 weeks and the average spent on groceries of 5 weeks.
-        console.log("You have spent a total of $" + totalCost + " on groceries over 5 weeks. That is an average of $" + avgWeeklyCosts + " per week.");
+    // Print out the total cost of groceries over 5 weeks and the average spent on groceries of 5 weeks.
+    console.log("You have spent a total of $" + totalCost + " on groceries over 5 weeks. That is an average of $" + avgWeeklyCosts + " per week.");
 
 
 // Discounts: Calculate the discounted price of an item with and without sales tax included.
