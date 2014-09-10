@@ -1,0 +1,1 @@
+This folder contains all assignments for Web Programming Fundamentals.
