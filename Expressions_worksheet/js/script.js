@@ -20,8 +20,9 @@
 
     // Multiply the number of slices per pizza by the number of pizzas to get the total amount of slices.
     // Then divide that number by the number of people to get the total number of slices per person.
-    // I then use the toFixed function to round the result to two decimal places.
     var numSlicesPerPerson = (numSlicesPerPizza * numPizzas) / numPeople;
+
+    // I then use the toFixed function to round the result to two decimal places.
     numSlicesPerPerson = numSlicesPerPerson.toFixed(2);
 
     // Print out the calculated slices of pizza given to each person.
