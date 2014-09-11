@@ -50,8 +50,13 @@
 // First two waves same value: meleeValue * 3 + casterValue * 3
 // Last wave higher value: meleeValue * 3 + casterValue * 3 + siegeValue
 
+// Gets input value for game time
 var gameTimeInput = prompt("Enter Game Time (acceptable inputs are whole numbers like 1 or half numbers like 1.5)");
+
+// Gets input value for greed level
 var greedLevelInput = prompt("Enter Mastery Level of Greed (acceptable inputs are 0, 1, 2, and 3)");
+
+// Gets input value for if wealth mastery was used
 var wealthInput = prompt("Was the mastery Wealth used? (acceptable inputs are yes or no)");
 
 // gameTime in terms of minutes
