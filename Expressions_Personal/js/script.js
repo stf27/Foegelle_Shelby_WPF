@@ -50,8 +50,10 @@
 // First two waves same value: meleeValue * 3 + casterValue * 3
 // Last wave higher value: meleeValue * 3 + casterValue * 3 + siegeValue
 
-// Passive Gold:
-// 19g / 10sec
+function foo () {
+    var name = document.formxml.gameTimeInput.value;
+    alert(name);
+}
 
 // gameTime in terms of minutes
 var gameTime = .5;
@@ -70,7 +72,11 @@ var wealth = "no";
 // Converts all units of time to seconds
 var time = gameTime * 60;
 
-var passiveGoldGenerated = 19 * (gameTime / 10);
+// passiveGold generates the amount of gold the player has made through the passive gold generating system.
+// The system gives the player 19 gold every 10 seconds.
+var passiveGoldGenerated = 19 * (time / 10);
+
+
 
 console.log(time + " seconds.");
 console.log(passiveGoldGenerated + " passive gold generated.");
