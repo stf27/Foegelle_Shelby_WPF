@@ -50,13 +50,9 @@
 // First two waves same value: meleeValue * 3 + casterValue * 3
 // Last wave higher value: meleeValue * 3 + casterValue * 3 + siegeValue
 
-function foo () {
-    var name = document.formxml.gameTimeInput.value;
-    alert(name);
-}
 
 // gameTime in terms of minutes
-var gameTime = .5;
+var gameTime = 0.5;
 
 // greedLevel refers to the mastery called Greed. Can be a value of 0, 1, 2, 3.
 // Level 1 Greed = 0.5g / 10sec
