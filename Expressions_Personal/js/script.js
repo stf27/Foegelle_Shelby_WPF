@@ -50,20 +50,23 @@
 // First two waves same value: meleeValue * 3 + casterValue * 3
 // Last wave higher value: meleeValue * 3 + casterValue * 3 + siegeValue
 
+var gameTimeInput = prompt("Enter Game Time (acceptable inputs are whole numbers like 1 or half numbers like 1.5)");
+var greedLevelInput = prompt("Enter Mastery Level of Greed (acceptable inputs are 0, 1, 2, and 3)");
+var wealthInput = prompt("Was the mastery Wealth used? (acceptable inputs are yes or no)");
 
 // gameTime in terms of minutes
-var gameTime = 0.5;
+var gameTime = gameTimeInput;
 
 // greedLevel refers to the mastery called Greed. Can be a value of 0, 1, 2, 3.
 // Level 1 Greed = 0.5g / 10sec
 // Level 2 Greed = 1.0g / 10sec
 // Level 3 Greed = 1.5g / 10sec
-var greedLevel = 2;
+var greedLevel = greedLevelInput;
 
 // wealth refers to the mastery called Wealth.
 // If the player has Wealth activated, then they start the game with an extra 40g.
 // Correct inputs for wealth include yes, no.
-var wealth = "no";
+var wealth = wealthInput;
 
 // Converts all units of time to seconds
 var time = gameTime * 60;
@@ -76,3 +79,5 @@ var passiveGoldGenerated = 19 * (time / 10);
 
 console.log(time + " seconds.");
 console.log(passiveGoldGenerated + " passive gold generated.");
+console.log(greedLevel);
+console.log(wealth);
