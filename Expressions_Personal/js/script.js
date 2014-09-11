@@ -1,8 +1,6 @@
 /**
  * Created by Shelby Foegelle on 9/10/2014.
- * Expressions Personal
+ * Expressions - Personal
  */
 
-var muppetNames = ["Kermit", "Miss Piggy", "Gonzo", 3];
-
-console.log(muppetNames)
+// How many creeps you need to farm to buy an item. While taking into account the amount of passive gold you have made.
