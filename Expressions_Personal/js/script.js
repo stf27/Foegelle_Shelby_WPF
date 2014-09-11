@@ -5,19 +5,27 @@
 
 // How many minions do you need to farm to buy an item? While taking into account the amount of passive gold you have made.
 
+// *Assumes the player has perfect farm*
+    // This is because if I were to take into account missed farm,
+    // it would be impossible to tell what minions the player did not get.
+    // I would have to ask specifically which types were missed and how many.
+    // While I could do that, I feel that it asks a bit too much of the user.
+    // So I wanted to keep it a bit more friendly for the user of this algorithm.
+
 // *Does not take into account gold generating items*
-// This is because there is no telling what time the player will no longer have that item.
+    // This is because there is no telling what time the player will no longer have that item.
+
 // *Does not take into account the gold generating masteries Scavenger and Bandit*
-// This is due to unpredictable factors.
+    // This is due to unpredictable factors.
 
 // Time in game
 
 // % creeps farmed
 
 // Value of each minion:
-// Melee: 19g + (0.5g * (gameTime / 180sec))
-// Caster: 14g + (0.2g * (gameTime / 90sec))
-// Siege: 40g + (1g * (gameTime / 180sec))
+    // Melee: 19g + (0.5g * (gameTime / 180sec))
+    // Caster: 14g + (0.2g * (gameTime / 90sec))
+    // Siege: 40g + (1g * (gameTime / 180sec))
 
 // Value of each wave (in sets of three):
 // First two waves same value: meleeValue * 3 + casterValue * 3
@@ -42,3 +50,5 @@ var greedLevel = 2;
 // If the player has Wealth activated, then they start the game with an extra 40g.
 // Correct inputs for wealth include yes, no.
 var wealth = "no";
+
+
