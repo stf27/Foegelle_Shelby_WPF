@@ -51,13 +51,28 @@
 // Last wave higher value: meleeValue * 3 + casterValue * 3 + siegeValue
 
 // Gets input value for game time
-var gameTimeInput = prompt("Enter Game Time (acceptable inputs are whole numbers like 1 or half numbers like 1.5)");
+var gameTimeInput = prompt("Enter Game Time\nAcceptable inputs are whole numbers like 1 or half numbers like 1.5.");
+// Checks if user input was the correct type. If not, alert user and ask for input again.
+while (isNaN(gameTimeInput)) {
+    alert("Illegal Input Type!");
+    gameTimeInput = prompt("Enter Game Time\nAcceptable inputs are whole numbers like 1 or half numbers like 1.5.");
+}
 
 // Gets input value for greed level
-var greedLevelInput = prompt("Enter Mastery Level of Greed (acceptable inputs are 0, 1, 2, and 3)");
+var greedLevelInput = prompt("Enter Mastery Level of Greed\nAcceptable inputs are 0, 1, 2, and 3");
+// Checks if user input was the correct type. If not, alert user and ask for input again.
+while ((greedLevelInput != 3) && (greedLevelInput != 2) && (greedLevelInput != 1) && (greedLevelInput != 0)) {
+    alert("Illegal Input Type!");
+    greedLevelInput = prompt("Enter Mastery Level of Greed\nAcceptable inputs are 0, 1, 2, and 3");
+}
 
 // Gets input value for if wealth mastery was used
-var wealthInput = prompt("Was the mastery Wealth used? (acceptable inputs are yes or no)");
+var wealthInput = prompt("Was the mastery Wealth used?\nAcceptable inputs are yes or no");
+// Checks if user input was the correct type. If not, alert user and ask for input again.
+while (wealthInput != "yes" && wealthInput != "no") {
+    alert("Illegal Input Type!");
+    wealthInput = prompt("Was the mastery Wealth used?\nAcceptable inputs are yes or no");
+}
 
 // gameTime in terms of minutes
 var gameTime = gameTimeInput;
@@ -76,13 +91,16 @@ var wealth = wealthInput;
 // Converts all units of time to seconds
 var time = gameTime * 60;
 
+var numWaves = (time - 90) / 30;
+
 // passiveGold generates the amount of gold the player has made through the passive gold generating system.
 // The system gives the player 19 gold every 10 seconds.
 var passiveGoldGenerated = 19 * (time / 10);
 
-
+var farmGoldGenerated =
 
 console.log(time + " seconds.");
 console.log(passiveGoldGenerated + " passive gold generated.");
 console.log(greedLevel);
 console.log(wealth);
+console.log(numWaves + " total waves.");
