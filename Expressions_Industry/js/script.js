@@ -22,15 +22,6 @@ while (isNaN(profitDesired)) {
     profitDesired = prompt("How much percent profit do you want to make in a year?\nRecommended is anywhere from 10 to 30 percent.\nPlease input a whole number for the profit.\n(e.g. 10, 11, 15, 20, etc.)");
 }
 
-// Gets input value for weekly hours worked
-//var hoursWorkedWeekly = prompt("How many hours do you plan on working a week?");
-// Checks if user input was the correct type. If not, alert user and ask for input again.
-//while (isNaN(hoursWorkedWeekly)) {
-//    alert("Illegal Input Type!");
-//    hoursWorkedWeekly = prompt("How many hours do you plan on working a week?");
-//}
-
-
 // Take target salary
 // Now factor in taxes, insuance, Social Security, etc.
 // A safe figure for the total cost of all these things is about 30%.
