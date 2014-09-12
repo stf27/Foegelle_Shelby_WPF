@@ -139,4 +139,4 @@ console.log("The game has gone for " + time + " seconds.");
 console.log("A total of " + passiveGoldGenerated + " passive gold has been generated.");
 console.log("A total of " + farmGoldGenerated + " farming gold has been generated.");
 console.log("A total of " + greedGoldGenerated + " greed gold has been generated.");
-console.log("And the total gold generated so far is: " + totalGoldGenerated + "gold.");
+console.log("And the total gold generated so far is " + totalGoldGenerated + " gold.");
