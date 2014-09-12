@@ -62,4 +62,5 @@ var monthlyHours = hoursCanWork / 12;
 var profitRate = hourlyRateWithOverhead * (profitDesired / 100);
 var finalSalary = hourlyRateWithOverhead + profitRate;
 
+// Output for the user to see what they must do to make their desired amount of money.
 console.log("In order to make the salary you desire, with the percent profit you desire,\nyou must charge your clients $" + finalSalary + " an hour and work " + monthlyHours + " hours a month.")
