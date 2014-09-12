@@ -40,12 +40,12 @@ var hoursCantWork = 7 * 8 + 10 * 8 + 5 * 8;
 // I will take 25% of working hours available off to compensate for that.
 var hoursCanWork = (workingHours - hoursCantWork) - ((workingHours - hoursCantWork) * .25);
 
-
+var baseHourlyWage = totalSalary / hoursCanWork;
 
 
 
 console.log(taxCosts + " tax costs.");
 console.log(totalSalary + " total salary.");
-
 console.log(hoursCantWork + " hours cant work.");
 console.log(hoursCanWork + " hours can work.");
+console.log("$" + baseHourlyWage + " per hour.");
