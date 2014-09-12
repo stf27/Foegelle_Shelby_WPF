@@ -4,7 +4,7 @@
  */
 
 // This calculator calculates how much you should charge a client hourly for freelance web design based on salary the user wishes to make,
-// hours worked weekly, and overhead (for things like an office, computers, etc.).
+    // hours worked weekly, overhead (for things like an office, computers, etc.), and the percent profit they wish to make.
 
 // Gets input value for weekly hours worked
 var targetSalary = prompt("How much do you want to make in a year?");
