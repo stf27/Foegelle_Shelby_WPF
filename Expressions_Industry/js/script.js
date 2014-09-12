@@ -28,8 +28,23 @@ while (isNaN(targetSalary)) {
 // A safe figure for the total cost of all these things is about 30%.
 // So take target salary and multiply that by 30% to find the costs
 var taxCosts = targetSalary * 0.3;
-
 var totalSalary = +targetSalary + +taxCosts;
+
+// There are a total of 2080 working hours in a year
+var workingHours = 2080;
+// But that doesn't include holidays (7 legal), vacation (we will assume 2 weeks), sick days (we will use 5)
+var hoursCantWork = 7 * 8 + 10 * 8 + 5 * 8;
+// This all comes out to 176 hours you are unable to work.
+// So there is really only 1904 working hours in a year.
+// That still leaves time you are not working (lunch, calls, playing, etc.).
+// I will take 25% of working hours available off to compensate for that.
+var hoursCanWork = workingHours - ((workingHours - hoursCantWork) * .25);
+
+
+
+
 
 console.log(taxCosts + " tax costs.");
 console.log(totalSalary + " total salary.");
+
+console.log(hoursCantWork + " hours cant work.");
