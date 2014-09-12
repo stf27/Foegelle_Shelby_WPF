@@ -55,14 +55,14 @@ var percentOverhead = overhead / totalSalary;
 var overheadHourlyRate = baseHourlyRate * percentOverhead;
 var hourlyRateWithOverhead = Math.floor(overheadHourlyRate + baseHourlyRate);
 
-
+var monthlyHours = hoursCanWork / 12;
 
 
 console.log(taxCosts + " tax costs.");
 console.log(totalSalary + " total salary.");
 console.log(hoursCantWork + " hours cant work.");
-console.log(hoursCanWork + " hours can work.");
 console.log("$" + baseHourlyRate + " per hour.");
 console.log(percentOverhead + " percent overhead.");
 console.log(overheadHourlyRate + " overhead hourly.");
 console.log(hourlyRateWithOverhead + " hourly rate with overhead.");
+console.log(monthlyHours + " monthly hours you must work to make that amount.");
