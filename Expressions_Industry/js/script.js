@@ -62,15 +62,4 @@ var monthlyHours = hoursCanWork / 12;
 var profitRate = hourlyRateWithOverhead * (profitDesired / 100);
 var finalSalary = hourlyRateWithOverhead + profitRate;
 
-console.log(taxCosts + " tax costs.");
-console.log(totalSalary + " total salary.");
-console.log(hoursCantWork + " hours cant work.");
-console.log("$" + baseHourlyRate + " per hour.");
-console.log(percentOverhead + " percent overhead.");
-console.log(overheadHourlyRate + " overhead hourly.");
-console.log(hourlyRateWithOverhead + " hourly rate with overhead.");
-console.log(monthlyHours + " monthly hours you must work to make that amount.");
-console.log(profitRate + " profit rate.");
-console.log(finalSalary + " final hourly rate.");
-
-console.log("In order to make")
+console.log("In order to make the salary you desire, with the percent profit you desire,\nyou must charge your clients $" + finalSalary + " an hour and work " + monthlyHours + " hours a month.")
