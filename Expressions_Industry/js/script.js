@@ -7,11 +7,11 @@
     // hours worked weekly, overhead (for things like an office, computers, etc.), and the percent profit they wish to make.
 
 // Gets input value for weekly hours worked
-var targetSalary = prompt("How much do you want to make in a year?");
+var targetSalary = prompt("How much do you want to make in a year?\n(This does not include taxes. The calculations add them for you later on.)");
 // Checks if user input was the correct type. If not, alert user and ask for input again.
 while (isNaN(targetSalary)) {
     alert("Illegal Input Type!");
-    targetSalary = prompt("How much do you want to make in a year?");
+    targetSalary = prompt("How much do you want to make in a year?\n(This does not include taxes. The calculations add them for you later on.)");
 }
 
 // Gets input value for percent profit desired
@@ -72,3 +72,5 @@ console.log(hourlyRateWithOverhead + " hourly rate with overhead.");
 console.log(monthlyHours + " monthly hours you must work to make that amount.");
 console.log(profitRate + " profit rate.");
 console.log(finalSalary + " final hourly rate.");
+
+console.log("In order to make")
