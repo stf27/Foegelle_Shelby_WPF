@@ -44,10 +44,15 @@ var hoursCanWork = (workingHours - hoursCantWork) - ((workingHours - hoursCantWo
 // I use floor to make a "pretty number" to show to clients.
 var baseHourlyWage = Math.floor(totalSalary / hoursCanWork);
 
-
+// For the sake of making things simpler on the user,
+// I will assume the overhead will be about $30,000.
+var overhead = 35000;
+// With that, we need to the percentage of salary this overhead accounts for.
+var percentOverhead = overhead / totalSalary;
 
 console.log(taxCosts + " tax costs.");
 console.log(totalSalary + " total salary.");
 console.log(hoursCantWork + " hours cant work.");
 console.log(hoursCanWork + " hours can work.");
 console.log("$" + baseHourlyWage + " per hour.");
+console.log(percentOverhead + " percent overhead.");
