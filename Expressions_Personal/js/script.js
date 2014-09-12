@@ -2,7 +2,7 @@
  * Created by Shelby Foegelle on 9/10/2014.
  * Expressions - Personal
  */
-    
+
 // This calculator is made for a game called League of Legends, a game I play almost every day.
 
 // It calculates the max gold a player can have at any time in the game.
