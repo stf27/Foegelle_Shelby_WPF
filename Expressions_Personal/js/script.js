@@ -91,7 +91,14 @@ var wealth = wealthInput;
 // Converts all units of time to seconds
 var time = gameTime * 60;
 
-var numWaves = (time - 90) / 30;
+// Calculates the total number of minion waves spawned so far
+var numWaves = ((time - 90) / 30) + 1;
+
+// Calculates the number of minion waves spawned without siege minions
+var numSmallWaves = Math.ceil((numWaves / (3/2)));
+
+// Calculates the number of minion waves spawned with siege minions
+var numBigWaves = Math.floor(numWaves / 3);
 
 // passiveGold generates the amount of gold the player has made through the passive gold generating system.
 // The system gives the player 19 gold every 10 seconds.
@@ -104,3 +111,5 @@ console.log(passiveGoldGenerated + " passive gold generated.");
 console.log(greedLevel);
 console.log(wealth);
 console.log(numWaves + " total waves.");
+console.log(numSmallWaves + " total small waves.");
+console.log(numBigWaves + " total big waves.");
