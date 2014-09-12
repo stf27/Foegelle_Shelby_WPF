@@ -129,3 +129,4 @@ console.log(numWaves + " total waves.");
 console.log(numSmallWaves + " total small waves.");
 console.log(numBigWaves + " total big waves.");
 console.log(farmGoldGenerated + " farm gold generated.");
+console.log(greedGoldGenerated + " greed gold generated.");
