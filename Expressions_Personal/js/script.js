@@ -81,7 +81,13 @@ var greedLevel = greedLevelInput;
 // wealth refers to the mastery called Wealth.
 // If the player has Wealth activated, then they start the game with an extra 40g.
 // Correct inputs for wealth include yes, no.
-var wealth = wealthInput;
+var wealth;
+if (wealthInput == "yes") {
+    wealth = 40;
+}
+if (wealthInput == "no") {
+    wealth = 0;
+}
 
 // Converts all units of time to seconds
 var time = gameTime * 60;
@@ -120,6 +126,7 @@ if (greedLevel == 2) {
 if (greedLevel == 3) {
     greedGoldGenerated = 1.5 * (time / 10);
 }
+
 
 console.log(time + " seconds.");
 console.log(passiveGoldGenerated + " passive gold generated.");
