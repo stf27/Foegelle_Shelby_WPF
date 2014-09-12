@@ -50,7 +50,9 @@ var overhead = 35000;
 // With that, we need to the percentage of salary this overhead accounts for.
 var percentOverhead = overhead / totalSalary;
 
-var hourlyRateWithOverhead = (baseHourlyRate * percentOverhead) + baseHourlyRate;
+// Calculates the hourly rate you need to pay for the overhead
+var overheadHourlyRate = baseHourlyRate * percentOverhead;
+var hourlyRateWithOverhead = overheadHourlyRate + baseHourlyRate;
 
 
 
@@ -61,4 +63,5 @@ console.log(hoursCantWork + " hours cant work.");
 console.log(hoursCanWork + " hours can work.");
 console.log("$" + baseHourlyRate + " per hour.");
 console.log(percentOverhead + " percent overhead.");
+console.log(overheadHourlyRate + " overhead hourly.");
 console.log(hourlyRateWithOverhead + " hourly rate with overhead.");
