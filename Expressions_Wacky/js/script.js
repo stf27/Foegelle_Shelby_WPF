@@ -4,7 +4,7 @@
  */
 
 // The calculator determines the percent chance you have to reach the end of a rainbow
-// depending on the amount of underwear you buy in a year, and several other factors...
+// depending on the type of underwear you wear, the amount of underwear you buy in a year, and several other wacky factors...
 
 
 // Gets input value for type of underwear the user wears most frequently
@@ -34,7 +34,7 @@ while ((starWarsOrStarTrek != "Star Wars") && (starWarsOrStarTrek != "Star Trek"
 // Gets input value for League of Legends or DOTA
 var lolOrDota = prompt("League of Legends or DOTA?\nAcceptable inputs are League of Legends, DOTA, or huh?\nCapitalization Matters!");
 // Checks if user input was the correct type. If not, alert user and ask for input again.
-while ((lolOrDota != "League of Legends") && (lolOrDota != "DOTA") && (lolOrDota != "Huh?")) {
+while ((lolOrDota != "League of Legends") && (lolOrDota != "DOTA") && (lolOrDota != "huh?")) {
     alert("Illegal Input Type!");
     lolOrDota = prompt("League of Legends or DOTA?\nAcceptable inputs are League of Legends, DOTA, or huh?\nCapitalization Matters!");
 }
@@ -60,7 +60,7 @@ if(underwearInfo[0] == "boxer briefs") {
     typeChance = .5;
 }
 if(underwearInfo[0] == "tighty-whiteys") {
-    typeChance = .8;
+    typeChance = .7;
 }
 
 // The base chance the user has to find the end of a rainbow.
@@ -69,36 +69,51 @@ var baseChance = 0;
 // These if statements determine the base score for for finding the end of a rainbow
 // depending on preference of Star Wars or Star Trek
 if(starWarsOrStarTrek == "Star Wars") {
-    baseChance = 1;
+    baseChance = 0.5;
 }
 if(starWarsOrStarTrek == "Star Trek") {
-    baseChance = 0;
+    baseChance = 0.2;
 }
 
 // These if statements determine the base score for for finding the end of a rainbow
 // depending on preference of League of Legends, DOTA, or huh?
 if(lolOrDota == "League of Legends") {
-    baseChance = 1;
+    baseChance += 0.2;
 }
 if(lolOrDota == "DOTA") {
-    baseChance = 0;
+    baseChance += 0;
 }
 if(lolOrDota == "huh?") {
-    baseChance = 0;
+    baseChance -= 0.1;
 }
 
 // These if statements determine the base score for for finding the end of a rainbow
 // depending on if the user likes The Lord of The Rings
+var lordOfTheRingsChance = 0;
+if(lordOfTheRings == "yes") {
+    lordOfTheRingsChance = 0.5;
+}
+if(lordOfTheRings == "no") {
+    lordOfTheRingsChance = 3;
+}
 
 // The overall change the user has to find the end of a rainbow
-var chance = (baseChance * typeChance);
+var chance = ((baseChance * typeChance) / lordOfTheRingsChance) * 100;
 
 // You buy way too much underwear!!!
-if(underwearInfo[1] > 25) {
-    console.log("You buy way too much underwear!!\nYou will never reach the end of a rainbow...")
+if(underwearInfo[1] > 15) {
+    console.log("You buy way too much underwear!!\nYou will never reach the end of a rainbow...");
+    console.log("*Disclaimer: This is a very judgemental calculator.*");
 }
-if(underwearInfo[1] <= 25) {
-    console.log(chance + " your chance.");
-    console.log(underwearInfo[0] + " type");
-    console.log(underwearInfo[1] + " total purchased");
+// Determines the message the user sees depending on their % chance of finding a rainbow
+if(underwearInfo[1] <= 15) {
+    if(chance > .4) {
+        console.log("You have a " + chance + "% chance of finding the end of a rainbow. Yay!");
+        console.log("*Disclaimer: This is a very judgemental calculator.*");
+    }
+    if(chance <= .4) {
+        console.log("You have a " + chance + "% chance of finding the end of a rainbow.");
+        console.log("Good luck ever finding the end of a rainbow...It doesn't seem likely.");
+        console.log("*Disclaimer: This is a very judgemental calculator.*");
+    }
 }
