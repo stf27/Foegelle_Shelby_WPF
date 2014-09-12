@@ -51,8 +51,9 @@ var overhead = 35000;
 var percentOverhead = overhead / totalSalary;
 
 // Calculates the hourly rate you need to pay for the overhead
+// I use floor again to make a "pretty" number
 var overheadHourlyRate = baseHourlyRate * percentOverhead;
-var hourlyRateWithOverhead = overheadHourlyRate + baseHourlyRate;
+var hourlyRateWithOverhead = Math.floor(overheadHourlyRate + baseHourlyRate);
 
 
 
