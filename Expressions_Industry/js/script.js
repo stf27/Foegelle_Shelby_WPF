@@ -48,3 +48,4 @@ console.log(taxCosts + " tax costs.");
 console.log(totalSalary + " total salary.");
 
 console.log(hoursCantWork + " hours cant work.");
+console.log(hoursCanWork + " hours can work.");
