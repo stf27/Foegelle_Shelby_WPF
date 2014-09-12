@@ -2,8 +2,10 @@
  * Created by Shelby Foegelle on 9/10/2014.
  * Expressions - Personal
  */
+    
+// This calculator is made for a game called League of Legends, a game I play almost every day.
 
-// Calculates the max gold a player can have at any time in the game.
+// It calculates the max gold a player can have at any time in the game.
     // This algorithm take into account the amount of passive gold you have made.
     // It also takes into account a few other forms of income from the utility masteries page.
 // It also assumes the player did not spend their starting money.
@@ -134,7 +136,7 @@ var farmGoldGenerated = Math.floor((((19 + (0.5 * (time / 180))) * 3) * numWaves
 // Calculates the total gold generated at any point in the game
 var totalGoldGenerated = passiveGoldGenerated + farmGoldGenerated + greedGoldGenerated + wealth + startingMoney;
 
-
+console.log("League of Legends Gold Accumulated:")
 console.log("The game has gone for " + time + " seconds.");
 console.log("A total of " + passiveGoldGenerated + " passive gold has been generated.");
 console.log("A total of " + farmGoldGenerated + " farming gold has been generated.");
