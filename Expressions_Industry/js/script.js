@@ -15,11 +15,11 @@ while (isNaN(targetSalary)) {
 }
 
 // Gets input value for percent profit desired
-var profitDesired = prompt("How much percent profit do you want to make in a year?\nRecommended is anywhere from 10 to 20 percent.\nPlease input a whole number for the profit.\n(e.g. 10, 11, 15, 20, etc.)");
+var profitDesired = prompt("How much percent profit do you want to make in a year?\nRecommended is anywhere from 10 to 30 percent.\nPlease input a whole number for the profit.\n(e.g. 10, 11, 15, 20, etc.)");
 // Checks if user input was the correct type. If not, alert user and ask for input again.
 while (isNaN(profitDesired)) {
     alert("Illegal Input Type!");
-    profitDesired = prompt("How much percent profit do you want to make in a year?\nRecommended is anywhere from 10 to 20 percent.\nPlease input a whole number for the profit.\n(e.g. 10, 11, 15, 20, etc.)");
+    profitDesired = prompt("How much percent profit do you want to make in a year?\nRecommended is anywhere from 10 to 30 percent.\nPlease input a whole number for the profit.\n(e.g. 10, 11, 15, 20, etc.)");
 }
 
 // Gets input value for weekly hours worked
@@ -63,8 +63,13 @@ var percentOverhead = overhead / totalSalary;
 var overheadHourlyRate = baseHourlyRate * percentOverhead;
 var hourlyRateWithOverhead = Math.floor(overheadHourlyRate + baseHourlyRate);
 
+// Tells use how many hours a month they would have to work to meet their income goal.
 var monthlyHours = hoursCanWork / 12;
 
+// Calculates the amount the user would have to add to their hourly rate with overhead
+// if they wanted to meet their percent profit goal.
+var profitRate = hourlyRateWithOverhead * (profitDesired / 100);
+var finalSalary = hourlyRateWithOverhead + profitRate;
 
 console.log(taxCosts + " tax costs.");
 console.log(totalSalary + " total salary.");
@@ -74,3 +79,5 @@ console.log(percentOverhead + " percent overhead.");
 console.log(overheadHourlyRate + " overhead hourly.");
 console.log(hourlyRateWithOverhead + " hourly rate with overhead.");
 console.log(monthlyHours + " monthly hours you must work to make that amount.");
+console.log(profitRate + " profit rate.");
+console.log(finalSalary + " final hourly rate.");
