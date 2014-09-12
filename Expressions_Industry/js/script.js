@@ -40,7 +40,9 @@ var hoursCantWork = 7 * 8 + 10 * 8 + 5 * 8;
 // I will take 25% of working hours available off to compensate for that.
 var hoursCanWork = (workingHours - hoursCantWork) - ((workingHours - hoursCantWork) * .25);
 
-var baseHourlyWage = totalSalary / hoursCanWork;
+// Calculates the base hourly wage before overhead.
+// I use floor to make a "pretty number" to show to clients.
+var baseHourlyWage = Math.floor(totalSalary / hoursCanWork);
 
 
 
