@@ -15,12 +15,12 @@ while (isNaN(targetSalary)) {
 }
 
 // Gets input value for weekly hours worked
-var hoursWorkedWeekly = prompt("How many hours do you plan on working a week?");
+//var hoursWorkedWeekly = prompt("How many hours do you plan on working a week?");
 // Checks if user input was the correct type. If not, alert user and ask for input again.
-while (isNaN(hoursWorkedWeekly)) {
-    alert("Illegal Input Type!");
-    hoursWorkedWeekly = prompt("How many hours do you plan on working a week?");
-}
+//while (isNaN(hoursWorkedWeekly)) {
+//    alert("Illegal Input Type!");
+//    hoursWorkedWeekly = prompt("How many hours do you plan on working a week?");
+//}
 
 
 // Take target salary
@@ -29,7 +29,7 @@ while (isNaN(hoursWorkedWeekly)) {
 // So take target salary and multiply that by 30% to find the costs
 var taxCosts = targetSalary * 0.3;
 
-targetSalary += taxCosts;
+var totalSalary = +targetSalary + +taxCosts;
 
-console.log(taxCosts + " tax costs.")
-console.log(targetSalary + " total salary.");
+console.log(taxCosts + " tax costs.");
+console.log(totalSalary + " total salary.");
