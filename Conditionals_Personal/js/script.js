@@ -66,6 +66,11 @@ var totalCostPerMonth = costPerKWHArray.reduce(function(a, b) {
    return a + b;
 });
 
+// Sets the total decimal places to 2 in order to make the output appear as currency.
+totalCostPerMonth = totalCostPerMonth.toFixed(2);
+
+// Old outputs. These were used to test that each array was working properly.
+/**
 console.log("Array Wattage: " + deviceWattageArray);
 console.log(typeof deviceWattageArray[0]);
 console.log("Array Hours: " + deviceHoursRunningArray);
@@ -75,3 +80,7 @@ console.log(typeof kiloWattPerHourArray[0]);
 console.log("Array Cost Per kWh: " + costPerKWHArray);
 console.log(typeof costPerKWHArray[0]);
 console.log("Total Cost Per Month: " + totalCostPerMonth);
+**/
+
+// Final output. Tells the user how much it costs them to run all of their devices every month.
+console.log("It costs you $" + totalCostPerMonth + " every month to run these devices for the amount of hours you run them.")
