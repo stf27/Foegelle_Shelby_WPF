@@ -36,8 +36,8 @@
       <file leaf-file-name="script.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/script.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.86879826" vertical-offset="657" max-vertical-offset="1564">
-              <caret line="85" column="126" selection-start-line="85" selection-start-column="126" selection-end-line="85" selection-end-column="126" />
+            <state vertical-scroll-proportion="1.0121279" vertical-offset="0" max-vertical-offset="1564">
+              <caret line="54" column="22" selection-start-line="54" selection-start-column="22" selection-end-line="54" selection-end-column="22" />
               <folding />
             </state>
           </provider>
@@ -104,7 +104,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Conditionals_worksheet" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Conditionals_Industry" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="FullScreen" value="false" />
   </component>
@@ -345,8 +345,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/js/script.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.86879826" vertical-offset="657" max-vertical-offset="1564">
-          <caret line="85" column="126" selection-start-line="85" selection-start-column="126" selection-end-line="85" selection-end-column="126" />
+        <state vertical-scroll-proportion="1.0121279" vertical-offset="0" max-vertical-offset="1564">
+          <caret line="54" column="22" selection-start-line="54" selection-start-column="22" selection-end-line="54" selection-end-column="22" />
           <folding />
         </state>
       </provider>
