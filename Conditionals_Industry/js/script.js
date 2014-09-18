@@ -33,8 +33,12 @@ if(emsOrColumn == "em") {
         contextValue = prompt("Enter the font size of the container the text will be in.\nFor example, the default font size for the body of most browsers is 16 pixels.\n If you are unsure what to input, then use 16.\nNumbers only please.");
     }
 
-    // Calculates the em value for the desired pixel size of the text.
+    // Calculates the em value for the desired pixel size of the text and sets decimal places to 2.
     var emValue = targetValue / contextValue;
+    emValue = emValue.toFixed(2);
+
+    // Outputs desired em value.
+    console.log("The em value you need is " + emValue + " ems.");
 }else if(emsOrColumn == "width") {
     // Gets target width from the user and checks that it is the correct input type (a number).
     targetValue = prompt("Enter the desired width of the element you want in pixels.");
@@ -50,10 +54,14 @@ if(emsOrColumn == "em") {
         contextValue = prompt("Enter the width of the container the element will be in.\nNumbers only please.");
     }
 
-    // Calculates the width for the desired element in terms of percentage.
+    // Calculates the width for the desired element in terms of percentage and sets decimal places to 2.
     var widthValue = (targetValue / contextValue) * 100;
+    widthValue = widthValue.toFixed(2);
+
+    // Outputs desired column width percentage value.
+    console.log("The column width value you need is " + widthValue + "%.")
 }else {
-    throw new Error("Something went terribly wrong! Please start over.")
+    throw new Error("Something went terribly wrong! Please start over.");
 }
 
 

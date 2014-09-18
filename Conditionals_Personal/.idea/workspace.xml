@@ -36,7 +36,7 @@
       <file leaf-file-name="script.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/script.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.88092613" vertical-offset="51" max-vertical-offset="1564">
+            <state vertical-scroll-proportion="0.48732084" vertical-offset="408" max-vertical-offset="1564">
               <caret line="50" column="21" selection-start-line="50" selection-start-column="21" selection-end-line="50" selection-end-column="21" />
               <folding />
             </state>
@@ -361,7 +361,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/js/script.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.88092613" vertical-offset="51" max-vertical-offset="1564">
+        <state vertical-scroll-proportion="0.48732084" vertical-offset="408" max-vertical-offset="1564">
           <caret line="50" column="21" selection-start-line="50" selection-start-column="21" selection-end-line="50" selection-end-column="21" />
           <folding />
         </state>
