@@ -52,6 +52,8 @@ if(emsOrColumn == "em") {
 
     // Calculates the width for the desired element in terms of percentage.
     var widthValue = (targetValue / contextValue) * 100;
+}else {
+    throw new Error("Something went terribly wrong! Please start over.")
 }
 
 
