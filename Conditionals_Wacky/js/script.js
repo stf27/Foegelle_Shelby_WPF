@@ -53,8 +53,16 @@ if(userSelfControl == "older") {
 
 // Formula for determining the chance that the user has to find out how many licks it takes to get to the center of a tootsie roll pop.
 var finalChance = ((startingChance + additionalChance) * selfControlFactor) * 100;
+// Sets decimal places to 2.
+finalChance = finalChance.toFixed(2);
 
+// Old testing outputs.
+/**
 console.log("Starting Chance: " + startingChance);
 console.log("Additional Chance: " + additionalChance);
 console.log("Self Control Factor: " + selfControlFactor);
 console.log("Final Chance: " + finalChance);
+**/
+
+// Outputs the user's chance.
+console.log("You have a " + finalChance + "% chance of finding out how many licks it takes to get to the center of a tootsie roll pop!")
