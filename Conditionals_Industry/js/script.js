@@ -5,7 +5,7 @@
  */
 
 // This program can calculate two things. The font size you want to use in ems based off of the size you want the text to be in pixels and the font size of the container the text is in. It can also calculate the percent width of a column based on the pixel size the user wants the column to be.
-alert("This program can calculate two things. The font size you want to use in ems based off of the size you want the text to be in pixels and the font size of the container the text is in. It can also calculate the percent width of a column based on the pixel size the user wants the column to be.");
+alert("This program can calculate two things. The font size you want to use in ems based off of the size you want the text to be in pixels and the font size of the container the text is in. It can also calculate the percent width of a column based on the pixel size the user wants the column to be and the pixel size of its container.");
 
 var emsOrColumn = prompt("Would you like to calculate the em value for text or the column width for a webpage layout?\nAppropriate input is 'em' or 'width'.");
 while(emsOrColumn != "em" && emsOrColumn != "width") {
