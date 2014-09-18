@@ -57,3 +57,5 @@ if(emsOrColumn == "em") {
 
 console.log("Target Value: " + targetValue);
 console.log("Context Value: " + contextValue);
+console.log("Em Value: " + emValue);
+console.log("Width Value: " + widthValue);
