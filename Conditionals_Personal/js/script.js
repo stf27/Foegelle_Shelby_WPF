@@ -61,6 +61,11 @@ for(arrayIncrement = 0; arrayIncrement < deviceWattageArray.length; ++arrayIncre
     costPerKWHArray[arrayIncrement] = kiloWattPerHourArray[arrayIncrement] * costPerKWH;
 }
 
+// Calls the function reduce to add every element in the cost per kWh array to find the final cost per month for the user to run their devices.
+var totalCostPerMonth = costPerKWHArray.reduce(function(a, b) {
+   return a + b;
+});
+
 console.log("Array Wattage: " + deviceWattageArray);
 console.log(typeof deviceWattageArray[0]);
 console.log("Array Hours: " + deviceHoursRunningArray);
@@ -69,3 +74,4 @@ console.log("Array kWh: " + kiloWattPerHourArray);
 console.log(typeof kiloWattPerHourArray[0]);
 console.log("Array Cost Per kWh: " + costPerKWHArray);
 console.log(typeof costPerKWHArray[0]);
+console.log("Total Cost Per Month: " + totalCostPerMonth);
