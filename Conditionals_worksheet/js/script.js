@@ -52,16 +52,16 @@
     var correctPassword = "HelloWorld!";
 
     // Gets username from user and checks that it is an existing username.
-    username = prompt("Please enter your username.");
+    username = prompt("Please enter your username.\n(Correct username is stf27)");
     while(username != correctUsername) {
         alert("User not found. Try again.");
-        username = prompt("Please enter your username.");
+        username = prompt("Please enter your username.\n(Correct username is stf27)");
     }
 
-    password = prompt("Please enter your password.");
+    password = prompt("Please enter your password.\n(Correct password is HelloWorld!)");
     while(password != correctPassword) {
         alert("Password does not match our records.");
-        password = prompt("Please enter your password.");
+        password = prompt("Please enter your password.\n(Correct password is HelloWorld!)");
     }
 
     console.log("Welcome, " + username + "!");
@@ -71,12 +71,26 @@
 // Group 3: Multiple Conditions
 
 // Givens
-var timeOfMovie = 2;
-var ageOfCustomer = 32;
+var timeOfMovie = 9;
+var AMOrPM = "PM";
+var ageOfCustomer = 22;
 var ticketPrice = 12;
-//!!!!!!!!Need to add am and pm!!!!!!!!!!!!
+
 // Checks if the movie is matinee.
-if(timeOfMovie >= 3 && timeOfMovie <=5) {
+if(AMOrPM == "PM") {
+    if(timeOfMovie >= 3 && timeOfMovie <=5) {
+        ticketPrice = 7;
+    }
+}
+
+
+// Checks if the customer is a senior citizen.
+if(ageOfCustomer >= 55) {
+    ticketPrice = 7;
+}
+
+// Checks if the customer is a child.
+if(ageOfCustomer < 10) {
     ticketPrice = 7;
 }
 
@@ -84,6 +98,6 @@ if(timeOfMovie >= 3 && timeOfMovie <=5) {
 ticketPrice = ticketPrice.toFixed(2);
 
 // Output the ticked price for the movie based on the time of the movie and the age of the customer.
-console.log("The ticket price is $" + ticketPrice);
+console.log("The ticket price is $" + ticketPrice + ".");
 
 // End Group 3.
