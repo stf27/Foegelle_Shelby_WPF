@@ -83,4 +83,4 @@ console.log("Total Cost Per Month: " + totalCostPerMonth);
 **/
 
 // Final output. Tells the user how much it costs them to run all of their devices every month.
-console.log("It costs you $" + totalCostPerMonth + " every month to run these devices for the amount of hours you run them.")
+console.log("It costs you $" + totalCostPerMonth + " every month to run these devices for the amount of hours you run them.");
