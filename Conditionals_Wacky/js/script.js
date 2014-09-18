@@ -30,16 +30,16 @@ while(userSelfControl != "younger" && userSelfControl != "older") {
 }
 
 // Checks if the user eats sweets frequently. If the user doesn't eat many sweets, then their chance to get to the center is lower than if they eat sweets frequently.
-var startingChance = (sweetsEatenFrequency <= 1) ? 0.2 : 0.5;
+var startingChance = (sweetsEatenFrequency <= 1) ? 0.1 : 0.3;
 
 // Adds or subtracts to the chance depending on the user's age.
 var additionalChance = 0;
 if(userAge <= 20) {
     additionalChance = -0.1;
 }else if(userAge > 20 && userAge <= 45) {
-    additionalChance = 0.2;
+    additionalChance = 0.05;
 }else {
-    additionalChance = 0.3;
+    additionalChance = 0.1;
 }
 
 // Creates a factor for if the user feels younger or older than they actually are.
@@ -52,7 +52,7 @@ if(userSelfControl == "older") {
 }
 
 // Formula for determining the chance that the user has to find out how many licks it takes to get to the center of a tootsie roll pop.
-var finalChance = (startingChance + additionalChance) * selfControlFactor;
+var finalChance = ((startingChance + additionalChance) * selfControlFactor) * 100;
 
 console.log("Starting Chance: " + startingChance);
 console.log("Additional Chance: " + additionalChance);
