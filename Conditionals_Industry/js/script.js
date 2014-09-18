@@ -21,3 +21,6 @@ while(isNaN(contextValue)) {
     alert("Incorrect Input!");
     contextValue = prompt("Enter the font size of the container the text will be in.\nFor example, the default font size for the body of most browsers is 16 pixels.\n If you are unsure what to input, then use 16.\nNumbers only please.");
 }
+
+console.log("Target Value: " + targetValue);
+console.log("Context Value: " + contextValue);
