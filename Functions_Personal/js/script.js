@@ -7,55 +7,48 @@
 // This program helps you to calculate your monthly expenses and compares that to your monthly income.
 function myFunction(form) {
 
-    var firstName = form.fname.value;
+    // Yearly Gross Income
+    var yearlyGrossIncome = form.yearGrossIncome.value;
 
-// Yearly Gross Income
-var yearlyGrossIncome = prompt("What is your yearly gross income?");
-// Checks if user input was the correct type. If not, alert user and ask for input again.
-while (isNaN(yearlyGrossIncome)) {
-alert("Illegal Input Type!");
-yearlyGrossIncome = prompt("What is your yearly gross income?\nNumbers only please!");
-}
-
-// Yearly Income Tax Rate
+    // Yearly Income Tax Rate
 
 
-// Rent/Mortgage
+    // Rent/Mortgage
 
-// Education/Tuition
+    // Education/Tuition
 
-// Credit Card Minimum Payments
+    // Credit Card Minimum Payments
 
-// Car Insurance
+    // Car Insurance
 
-// Gasoline
+    // Gasoline
 
-// Other Car Expenses
+    // Other Car Expenses
 
-// Other Loan Payments
+    // Other Loan Payments
 
-// Home Insurance
+    // Home Insurance
 
-// Life Insurance
+    // Life Insurance
 
-// Health/Dental Insurance
+    // Health/Dental Insurance
 
-// Telephone
+    // Telephone
 
-// Cable/TV/Internet
+    // Cable/TV/Internet
 
-// Electricity
+    // Electricity
 
-// Water/Garbage
+    // Water/Garbage
 
-// Groceries
+    // Groceries
 
-// Personal Care (clothing, haircuts, etc.)
+    // Personal Care (clothing, haircuts, etc.)
 
-// Eating Out
+    // Eating Out
 
-// Subscriptions
+    // Subscriptions
 
-    console.log("First Name: " + firstName);
-    //alert("You typed: " + firstName);
+    console.log("Yearly Income: " + yearlyGrossIncome);
+
 }
