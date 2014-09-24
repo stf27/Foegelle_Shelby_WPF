@@ -4,4 +4,4 @@
  * Functions - Industry
  */
 
-
+// Calculate how much it should cost to make a website
