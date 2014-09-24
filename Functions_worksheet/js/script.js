@@ -27,8 +27,8 @@
 // Number bee stings per pound to kill an animal
 var beeStingNum = 8.666666667;
 
-// Variable that stores the weight of the animal
-var victimWeight = 20;
+// Gets user input and stores the weight of the animal
+var victimWeight = prompt("This program calculates the number of bee stings it would take to kill an animal depending on their weight.\nPlease enter a weight (in pounds).");
 
 // Calculates the total number of stings it takes to kill an animal of a given weight
 function stingsToKill (weight) {
