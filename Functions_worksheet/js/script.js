@@ -4,4 +4,7 @@
  * Functions Worksheet
  */
 
+// Circumference
 
+// Radius of circle variable
+var circleRadius = 0;
