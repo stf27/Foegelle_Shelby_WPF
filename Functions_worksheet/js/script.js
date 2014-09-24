@@ -8,3 +8,8 @@
 
 // Radius of circle variable
 var circleRadius = 0;
+
+function calculateCircumference(radius) {
+    return 2 * Math.PI * radius;
+}
+
