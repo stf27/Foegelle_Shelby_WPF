@@ -19,6 +19,7 @@
 
     // Outputs circumference value to console
     console.log("The circumference of the circle is " + circumference);
+// Circumference End
 
 // Stung!
 
@@ -39,3 +40,5 @@ var numBeeStings = stingsToKill(victimWeight).toFixed(2);
 
 // Outputs the number of stings it takes to kill an animal to the console
 console.log("It takes " + numBeeStings + " bee stings to kill this animal.")
+
+// Stung! End
