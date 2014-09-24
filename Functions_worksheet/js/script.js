@@ -16,3 +16,5 @@ function calculateCircumference(radius) {
 
 var circumference = calculateCircumference(circleRadius);
 
+console.log("The circumference of the circle is " + circumference);
+
