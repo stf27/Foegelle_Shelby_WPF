@@ -49,5 +49,24 @@ function myFunction(form) {
     var subscriptions = form.subscriptions.value;
 
     console.log("Yearly Income: " + yearlyGrossIncome);
+    console.log("Yearly Income: " + yearlyIncomeTaxRate);
+    console.log("Yearly Income: " + rentMortgage);
+    console.log("Yearly Income: " + educationTuition);
+    console.log("Yearly Income: " + creditCardPayments);
+    console.log("Yearly Income: " + carInsurance);
+    console.log("Yearly Income: " + gasoline);
+    console.log("Yearly Income: " + otherCarExpenses);
+    console.log("Yearly Income: " + otherLoanPayments);
+    console.log("Yearly Income: " + homeInsurance);
+    console.log("Yearly Income: " + lifeInsurance);
+    console.log("Yearly Income: " + healthDentalInsurance);
+    console.log("Yearly Income: " + telephone);
+    console.log("Yearly Income: " + tvInternet);
+    console.log("Yearly Income: " + electricity);
+    console.log("Yearly Income: " + waterGarbage);
+    console.log("Yearly Income: " + groceries);
+    console.log("Yearly Income: " + personalCare);
+    console.log("Yearly Income: " + eatingOut);
+    console.log("Yearly Income: " + subscriptions);
 
 }
