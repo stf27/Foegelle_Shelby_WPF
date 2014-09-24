@@ -24,3 +24,11 @@
 
 // Variable that stores the weight of the animal
 var victimWeight = 0;
+
+// Given
+// Number bee stings per pound to kill an animal
+var beeStingNum = 8.666666667;
+
+function stingsToKill (weight) {
+    return weight *
+}
