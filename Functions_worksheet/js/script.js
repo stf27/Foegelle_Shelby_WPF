@@ -14,7 +14,9 @@ function calculateCircumference(radius) {
     return 2 * Math.PI * radius;
 }
 
+// Stores circumference value here
 var circumference = calculateCircumference(circleRadius);
 
+// Outputs circumference value to console
 console.log("The circumference of the circle is " + circumference);
 
