@@ -36,3 +36,5 @@ function stingsToKill (weight) {
 
 // Stores value for the number of bee stings it takes to kill an animal
 var numBeeStings = stingsToKill(victimWeight);
+
+console.log("It takes " + numBeeStings + " bee stings to kill this animal.")
