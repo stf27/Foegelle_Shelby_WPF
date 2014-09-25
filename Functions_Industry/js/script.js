@@ -72,6 +72,9 @@ function industryFunction(form) {
         eCommerceCost = 4000;
     }
 
+    // Stores the final cost of the website using the totalCost function made earlier
+    var finalCost = totalCost(numPagesCost, designNeededCost, databaseIntegrationCost, eCommerceCost);
+
     // Test Output
     console.log("Number of Web Pages: " + numPages);
     console.log("Page Cost: " + numPagesCost);
@@ -81,4 +84,5 @@ function industryFunction(form) {
     console.log("Database Integration Cost: " + databaseIntegrationCost);
     console.log("E-Commerce Integration: " + eCommerce);
     console.log("E-Commerce Integration Cost: " + eCommerceCost);
+    console.log("Final Cost: " + finalCost);
 }
