@@ -5,6 +5,13 @@
  */
 
 // This program helps you to calculate your monthly expenses and compares that to your monthly income.
+
+// Function to sum an array
+function arraySum(array) {
+    return array.reduce(function(a, b) {return a + b;});
+}
+
+// Function that gets data from HTML form and runs the calculations
 function myFunction(form) {
 
     // Variables get their value from the HTML form input boxes
@@ -12,6 +19,7 @@ function myFunction(form) {
     var income =[];
     // Array that stores the user's expenses
     var expenses = [];
+
     /**
     // Yearly Gross Income
     var yearlyGrossIncome = form.yearGrossIncome.value;
@@ -96,31 +104,14 @@ function myFunction(form) {
     // Subscriptions
     expenses[17] = form.subscriptions.value;
 
-    function sum() {
-
-    }
 
 
+    // Converts the array values into numbers
+    var numIncome = income.map(Number);
+    var numExpenses = expenses.map(Number);
 
-    console.log("Yearly Income: " + yearlyGrossIncome);
-    console.log("Yearly Income: " + yearlyIncomeTaxRate);
-    console.log("Yearly Income: " + rentMortgage);
-    console.log("Yearly Income: " + educationTuition);
-    console.log("Yearly Income: " + creditCardPayments);
-    console.log("Yearly Income: " + carInsurance);
-    console.log("Yearly Income: " + gasoline);
-    console.log("Yearly Income: " + otherCarExpenses);
-    console.log("Yearly Income: " + otherLoanPayments);
-    console.log("Yearly Income: " + homeInsurance);
-    console.log("Yearly Income: " + lifeInsurance);
-    console.log("Yearly Income: " + healthDentalInsurance);
-    console.log("Yearly Income: " + telephone);
-    console.log("Yearly Income: " + tvInternet);
-    console.log("Yearly Income: " + electricity);
-    console.log("Yearly Income: " + waterGarbage);
-    console.log("Yearly Income: " + groceries);
-    console.log("Yearly Income: " + personalCare);
-    console.log("Yearly Income: " + eatingOut);
-    console.log("Yearly Income: " + subscriptions);
+    var totalExpenses = arraySum(numExpenses);
 
+    console.log("Array: " + expenses);
+    console.log("Sum: " + arrayTotal);
 }
