@@ -13,7 +13,7 @@ function arraySum(array) {
 }
 
 // Function that gets data from HTML form and runs the calculations
-function myFunction(form) {
+function personalFunction(form) {
 
     // Variables get their value from the HTML form input boxes
     // Array that stores the user's income and income tax amount

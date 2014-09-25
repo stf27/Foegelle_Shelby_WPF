@@ -7,5 +7,29 @@
     </head>
     <body>
         <script src="js/script.js"></script>
+        <form action="">
+            Number of Web Pages: <select name="webPages">
+                <option value="1-10">1-10</option>
+                <option value="11-50">11-50</option>
+                <option value="51-100">51-100</option>
+                <option value="101-150">101-150</option>
+            </select><br>
+            Amount of Design Needed: <select name="designNeeded">
+                <option value="basic">Basic</option>
+                <option value="modern">Modern</option>
+                <option value="highEnd">High End</option>
+            </select><br>
+            Amount of Database Integration Needed: <select name="databaseIntegration">
+                <option value="none">None</option>
+                <option value="basic">Basic</option>
+                <option value="advanced">Advanced</option>
+            </select><br>
+            Amount of E-Commerce Integration Needed: <select name="eCommerce">
+                <option value="none">None</option>
+                <option value="basic">Basic</option>
+                <option value="advanced">Advanced</option>
+            </select><br>
+            <input type="button" onclick="industryFunction(this.form)" value="Submit">
+        </form>
     </body>
 </html>
