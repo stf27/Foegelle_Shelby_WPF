@@ -20,49 +20,7 @@ function myFunction(form) {
     // Array that stores the user's expenses
     var expenses = [];
 
-    /**
-    // Yearly Gross Income
-    var yearlyGrossIncome = form.yearGrossIncome.value;
-    // Yearly Income Tax Rate
-    var yearlyIncomeTaxRate = form.yearIncomeTaxRate.value;
-    // Rent/Mortgage
-    var rentMortgage = form.rentMortgage.value;
-    // Education/Tuition
-    var educationTuition = form.educationTuition.value;
-    // Credit Card Minimum Payments
-    var creditCardPayments = form.creditCardPayments.value;
-    // Car Insurance
-    var carInsurance = form.carInsurance.value;
-    // Gasoline
-    var gasoline = form.gasoline.value;
-    // Other Car Expenses
-    var otherCarExpenses = form.otherCarExpenses.value;
-    // Other Loan Payments
-    var otherLoanPayments = form.otherLoanPayments.value;
-    // Home Insurance
-    var homeInsurance = form.homeInsurance.value;
-    // Life Insurance
-    var lifeInsurance = form.lifeInsurance.value;
-    // Health/Dental Insurance
-    var healthDentalInsurance = form.healthDentalInsurance.value;
-    // Telephone
-    var telephone = form.telephone.value;
-    // TV/Internet
-    var tvInternet = form.tvInternet.value;
-    // Electricity
-    var electricity = form.electricity.value;
-    // Water/Garbage
-    var waterGarbage = form.waterGarbage.value;
-    // Groceries
-    var groceries = form.groceries.value;
-    // Personal Care (clothing, haircuts, etc.)
-    var personalCare = form.personalCare.value;
-    // Eating Out
-    var eatingOut = form.eatingOut.value;
-    // Subscriptions
-    var subscriptions = form.subscriptions.value;
-    **/
-
+    // Gets values from form and stores them into their respective array
     // Yearly Gross Income
     income[0] = form.yearGrossIncome.value;
     // Yearly Income Tax Rate
@@ -104,14 +62,35 @@ function myFunction(form) {
     // Subscriptions
     expenses[17] = form.subscriptions.value;
 
-
-
     // Converts the array values into numbers
     var numIncome = income.map(Number);
     var numExpenses = expenses.map(Number);
 
-    var totalExpenses = arraySum(numExpenses);
+    // *Anonymous function*
+    // Calculates monthly income with income tax percentage in mind
+    var monthlyIncome = function() {
+        return (numIncome[0] - (numIncome[0] * (numIncome[1]/100))) / 12;
+    };
 
-    console.log("Array: " + expenses);
-    console.log("Sum: " + arrayTotal);
+    // Uses the function arraySum to find the total expenses of the user per month
+    var monthlyExpenses = arraySum(numExpenses);
+
+    // Calculates the amount the user saves every month
+    var amountSaved = monthlyIncome() - monthlyExpenses;
+
+    // Outputs the monthly income of the user and sets the decimal places to 2
+    console.log("Monthly Income: $" + monthlyIncome().toFixed(2));
+    // Outputs the monthly expenses of the user and sets the decimal places to 2
+    console.log("Monthly Expenses: $" + monthlyExpenses.toFixed(2));
+    // Outputs the amount the user is saving each month
+    console.log("Monthly Savings: $" + amountSaved.toFixed(2));
+
+    // Tests if the user is saving money or overspending and then outputs a specific message based off of that criteria
+    if(amountSaved < 0) {
+        console.log("You are overspending!");
+    }else if (amountSaved == 0) {
+        console.log("You are spending the max amount of money you have available! You may want to rethink your spending habits.");
+    }else {
+        console.log("You are saving $" + amountSaved.toFixed(2) + " a month.")
+    }
 }
