@@ -58,7 +58,7 @@ var priceOfPizzaPerSquareInch2 = (pricePerSquareInch(areaOfPizza2, priceOfPizza2
 // Checks the prices of the two pizzas per square inch and creates a message to tell the user which one is a better buy
 var financialAdvice = "The " + ((priceOfPizzaPerSquareInch1 < priceOfPizzaPerSquareInch2) ? "value of the first pizza is better. You should probably go for that one!" : "value of the second pizza is better. You should probably go for that one!");
 
-console.log("The price of pizza per square inch for the first pizza is $" + priceOfPizzaPerSquareInch1);
-console.log("The price of pizza per square inch for the first pizza is $" + priceOfPizzaPerSquareInch2);
+// Outputs the value of the pizzas per square inch and tell the user which one they should probably buy based on price
+console.log("The price of the first pizza per square inch is $" + priceOfPizzaPerSquareInch1 + ".");
+console.log("The price of the second pizza per square inch is $" + priceOfPizzaPerSquareInch2 + ".");
 console.log(financialAdvice);
-
