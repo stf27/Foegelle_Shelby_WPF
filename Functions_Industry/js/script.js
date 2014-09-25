@@ -10,7 +10,19 @@ function industryFunction(form) {
 
     // Number of Pages (1k for 1 to 10 pages, 2k for 10 to 50, 3k for 50 to 100, 4k for 100 to 150)
     var numPages = form.webPages.value;
-
+    var numPagesCost = 0;
+    if(numPages = "1-10") {
+        numPagesCost = 1000;
+    }
+    if(numPages = "1-10") {
+        numPagesCost = 2000;
+    }
+    if(numPages = "1-10") {
+        numPagesCost = 3000;
+    }
+    if(numPages = "1-10") {
+        numPagesCost = 4500;
+    }
     // Amount of design needed (2k for simple, 3k for modern style, 4k for high end design)
     var designNeeded = form.designNeeded.value;
 
@@ -23,6 +35,6 @@ function industryFunction(form) {
     console.log("Number of Web Pages: " + numPages);
     console.log("Design Needed: " + designNeeded);
     console.log("Database Integration: " + databaseIntegration);
-    console.log("E-Commerce Integation: " + eCommerce);
+    console.log("E-Commerce Integration: " + eCommerce);
 
 }
