@@ -22,5 +22,11 @@ while(isNaN(priceOfPizza)) {
     priceOfPizza = prompt("What is the price of the pizza?\nNumbers only please!");
 }
 
+function areaOfCircle(diameter) {
+    var radius = diameter / 2;
+    return Math.PI * (r * r);
+}
+
+
 console.log("The diameter of the pizza is " + diameterOfPizza);
 console.log("The price of the pizza is " + priceOfPizza);
