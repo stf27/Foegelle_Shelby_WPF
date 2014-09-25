@@ -47,13 +47,18 @@ while(isNaN(priceOfPizza1)) {
     priceOfPizza1 = prompt("What is the price of the second pizza?\nNumbers only please!");
 }
 
-
-// Stores the area of the pizza
+// Stores the area of the pizzas
 var areaOfPizza1 = areaOfCircle(diameterOfPizza1);
 var areaOfPizza2 = areaOfCircle(diameterOfPizza2);
-// Stores the price of the pizza and sets the number of decimal places to 2
+
+// Stores the price of the pizzas and sets the number of decimal places to 2
 var priceOfPizzaPerSquareInch1 = (pricePerSquareInch(areaOfPizza1, priceOfPizza1)).toFixed(2);
 var priceOfPizzaPerSquareInch2 = (pricePerSquareInch(areaOfPizza2, priceOfPizza2)).toFixed(2);
 
-console.log("The price of pizza per square inch is $" + priceOfPizzaPerSquareInch1);
+// Checks the prices of the two pizzas per square inch and creates a message to tell the user which one is a better buy
+var financialAdvice = "The " + ((priceOfPizzaPerSquareInch1 < priceOfPizzaPerSquareInch2) ? "value of the first pizza is better. You should probably go for that one!" : "value of the second pizza is better. You should probably go for that one!");
+
+console.log("The price of pizza per square inch for the first pizza is $" + priceOfPizzaPerSquareInch1);
+console.log("The price of pizza per square inch for the first pizza is $" + priceOfPizzaPerSquareInch2);
+console.log(financialAdvice);
 
