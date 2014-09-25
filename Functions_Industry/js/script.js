@@ -4,8 +4,7 @@
  * Functions - Industry
  */
 
-// Calculate how much it should cost to make a website
-
+// Calculates a recommended cost to make a website
 function industryFunction(form) {
 
     // Sums up the total cost for creating a website
@@ -75,14 +74,18 @@ function industryFunction(form) {
     // Stores the final cost of the website using the totalCost function made earlier
     var finalCost = totalCost(numPagesCost, designNeededCost, databaseIntegrationCost, eCommerceCost);
 
-    // Test Output
-    console.log("Number of Web Pages: " + numPages);
-    console.log("Page Cost: " + numPagesCost);
-    console.log("Design Needed: " + designNeeded);
-    console.log("Design Needed Cost: " + designNeededCost);
-    console.log("Database Integration: " + databaseIntegration);
-    console.log("Database Integration Cost: " + databaseIntegrationCost);
-    console.log("E-Commerce Integration: " + eCommerce);
-    console.log("E-Commerce Integration Cost: " + eCommerceCost);
-    console.log("Final Cost: " + finalCost);
+    // Sets the number of decimal places to 2 for all currency variables
+    numPagesCost = numPagesCost.toFixed(2);
+    designNeededCost = designNeededCost.toFixed(2);
+    databaseIntegrationCost = databaseIntegrationCost.toFixed(2);
+    eCommerceCost = eCommerceCost.toFixed(2);
+    finalCost = finalCost.toFixed(2);
+
+    // Final output for user to see the recommended cost to create the website
+    console.log("It is recommended that you charge $" + finalCost + " to create this website.");
+    console.log("Page Cost Recommendation: $" + numPagesCost);
+    console.log("Design Needed Cost Recommendation: $" + designNeededCost);
+    console.log("Database Integration Cost Recommendation: $" + databaseIntegrationCost);
+    console.log("E-Commerce Integration Cost Recommendation: $" + eCommerceCost);
+
 }
