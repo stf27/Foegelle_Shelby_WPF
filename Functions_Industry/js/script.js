@@ -8,7 +8,13 @@
 
 function industryFunction(form) {
 
+    // Sums up the total cost for creating a website
+    function totalCost(pages, design, database, eCommerce) {
+        return pages + design + database + eCommerce;
+    }
+
     // Number of Pages (1k for 1 to 10 pages, 2k for 10 to 50, 3k for 50 to 100, 4k for 100 to 150)
+    // If statements check the user input value and assign a cost to it
     var numPages = form.webPages.value;
     var numPagesCost = 0;
     if(numPages == "1-10") {
@@ -25,6 +31,7 @@ function industryFunction(form) {
     }
 
     // Amount of design needed (2k for basic, 3k for modern style, 4k for high end design)
+    // If statements check the user input value and assign a cost to it
     var designNeeded = form.designNeeded.value;
     var designNeededCost = 0;
     if(designNeeded == "basic") {
@@ -38,6 +45,7 @@ function industryFunction(form) {
     }
 
     // Database Integration (2k for Basic, 4k for Advanced)
+    // If statements check the user input value and assign a cost to it
     var databaseIntegration = form.databaseIntegration.value;
     var databaseIntegrationCost = 0;
     if(databaseIntegration == "none") {
@@ -51,6 +59,7 @@ function industryFunction(form) {
     }
 
     // E-Commerce Functionality (2k for Basic, 4k for Advanced)
+    // If statements check the user input value and assign a cost to it
     var eCommerce = form.eCommerce.value;
     var eCommerceCost = 0;
     if(eCommerce == "none") {
@@ -63,7 +72,7 @@ function industryFunction(form) {
         eCommerceCost = 4000;
     }
 
-
+    // Test Output
     console.log("Number of Web Pages: " + numPages);
     console.log("Page Cost: " + numPagesCost);
     console.log("Design Needed: " + designNeeded);
