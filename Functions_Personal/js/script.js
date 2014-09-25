@@ -5,6 +5,7 @@
  */
 
 // This program helps you to calculate your monthly expenses and compares that to your monthly income.
+// Please input all your values into the text boxes on the webpage and press submit
 
 // Function to sum an array
 function arraySum(array) {
@@ -82,7 +83,7 @@ function myFunction(form) {
     console.log("Monthly Income: $" + monthlyIncome().toFixed(2));
     // Outputs the monthly expenses of the user and sets the decimal places to 2
     console.log("Monthly Expenses: $" + monthlyExpenses.toFixed(2));
-    // Outputs the amount the user is saving each month
+    // Outputs the amount the user is saving each month and sets the decimal places to 2
     console.log("Monthly Savings: $" + amountSaved.toFixed(2));
 
     // Tests if the user is saving money or overspending and then outputs a specific message based off of that criteria
@@ -91,6 +92,6 @@ function myFunction(form) {
     }else if (amountSaved == 0) {
         console.log("You are spending the max amount of money you have available! You may want to rethink your spending habits.");
     }else {
-        console.log("You are saving $" + amountSaved.toFixed(2) + " a month.")
+        console.log("You are spending less than you make in a month! Great job!")
     }
 }
